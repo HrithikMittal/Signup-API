@@ -47,9 +47,6 @@ MongoClient.connect(url, (err, db) => {
       person.pno = req.body.pno;
       person.email = req.body.email;
       person.baddress = req.body.baddress;
-      person.btype = req.body.btype;
-      person.fyear = req.body.fyear;
-      person.booksdate = req.body.booksdate;
 
       dbo.collection("details").find({}).toArray(function (err, result) {
         if (err) throw err;
