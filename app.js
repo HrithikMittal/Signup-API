@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 3000;
 
 // Connect to DB
-// mongoose.connect('mongodb://localhost:27017/login');
+mongoose.connect('mongodb+srv://hrithik:hrithik123@users-6oe1e.gcp.mongodb.net/test?retryWrites=true'); //Will be different for the localhost and the different user.
 
 //API Routes
 var router = express.Router();
